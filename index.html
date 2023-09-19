@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TechnoCake</title>
+
+   <!-- font awesome cdn link  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+   <!-- header section starts  -->
+
+   <header class="header">
+
+      <div id="menu-btn" class="fas fa-bars icons"></div>
+      <div id="search-btn" class="fas fa-search icons"></div>
+
+      <nav class="navbar">
+         <a href="#home">inicio</a>
+         <a href="#menu">productos</a>
+         <a href="#about">acerca</a>
+         <span class="space"></span>
+         <a href="#reviews">reviews</a>
+         <a href="#contact">contacto</a>
+         <a href="#blogs">blogs</a>
+      </nav>
+      <div class="shopping">
+          <a href="#" class="fas fa-shopping-cart icons"></a>
+          <span class="quantity">0</span>
+      </div>
+      
+      <a href="#home" class="logo"><img src="images/logo2.png" alt=""></a>
+
+      <form action="" class="search-form">
+         <input type="search" name="" placeholder="search here..." id="search-box">
+         <label for="search-box" class="fas fa-search icons"></label>
+      </form>
+
+   </header>
+   
+   
+   <!-- header section ends  -->
+
+   <!-- home section starts  -->
+
+   <section class="home" id="home">
+
+      <div class="content">
+         <img data-aos="fade-up" data-aos-delay="150" src="images/cake-banner.png" alt="" width="400" height="300">
+         <h3 data-aos="fade-up" data-aos-delay="200">Deliciosos pasteles a un clic de distancia</h3>
+         <p data-aos="fade-up" data-aos-delay="450">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at
+            fuga aliquam ipsa recusandae repellat laudantium pariatur amet culpa cum.</p>
+         <a data-aos="fade-up" data-aos-delay="600" href="#menu" class="btn">Nuestros Productos</a>
+      </div>
+
+   </section>
+
+   <!-- home section ends -->
+
+   <!-- service sectioin starts  -->
+
+   <section class="service">
+
+      <div class="box" data-aos="fade-up" data-aos-delay="150">
+         <i class="fas fa-hamburger"></i>
+         <h3>best quality</h3>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, cum.</p>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="300">
+         <i class="fas fa-shipping-fast"></i>
+         <h3>free delivery</h3>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, cum.</p>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+         <i class="fas fa-headset"></i>
+         <h3>24/7 support</h3>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, cum.</p>
+      </div>
+
+   </section>
+
+   <!-- service sectioin ends -->
+
+   <!-- menu section starts  -->
+
+   <section class="menu" id="menu">
+      
+      
+      <div class="heading">
+         <img src="images/title-img.png" alt="">
+         <h3>Nuestros Productos</h3>
+      </div>
+      <div class="container py-5">
+         <h1 class="text-center">Popular Dishes</h1>
+         <div id="list" class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            
+            <!-- <div class="list"> -->
+            <!--<div class="col" data-aos="fade-up" data-aos-delay="450">
+               <div class="card">
+                   <img src="./pics/product-1.png" alt width="330" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">TIRAMISU CAKE</h5>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                     <h3>190$</h3>
+                     <button class="btn btn-primary">Buy Now</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col" data-aos="fade-up" data-aos-delay="450">
+               <div class="card">
+                  <img src="./pics/product-2.png" alt width="330" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">TIRAMISU CAKE</h5>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                     <h3>190$</h3>
+                     <button class="btn btn-primary">Buy Now</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col" data-aos="fade-up" data-aos-delay="450">
+               <div class="card">
+                  <img src="./pics/product-3.png" alt width="330" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">TIRAMISU CAKE</h5>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                     <h3>190$</h3>
+                     <button class="btn btn-primary">Buy Now</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col" data-aos="fade-up" data-aos-delay="450">
+               <div class="card">
+                  <img src="./pics/product-4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">TIRAMISU CAKE</h5>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                     <h3>190$</h3>
+                     <button class="btn btn-primary">Buy Now</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col" data-aos="fade-up" data-aos-delay="450">
+               <div class="card">
+                  <img src="./pics/product-5.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">TIRAMISU CAKE</h5>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                     <h3>190$</h3>
+                     <button class="btn btn-primary">Buy Now</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col" data-aos="fade-up" data-aos-delay="450">
+               <div class="card">
+                  <img src="./pics/product-6.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">TIRAMISU CAKE</h5>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                     <h3>190$</h3>
+                     <button class="btn btn-primary">Buy Now</button>
+                  </div>-->
+               <!-- </div> -->
+            </div>  
+         </div>
+
+      </div>
+      </div>
+
+
+   </section>
+
+   <!-- menu section ends -->
+
+   <!-- about section starts  -->
+
+   <section class="about" id="about">
+
+      <div class="image" data-aos="fade-right" data-aos-delay="150">
+         <img src="pics/about-image.png" alt="" height="550">
+      </div>
+
+      <div class="content" data-aos="fade-left" data-aos-delay="300">
+         <h3 class="title">Acerca de TechnoCake</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, veniam error fugit quasi perspiciatis
+            blanditiis quo, sint beatae ut, commodi fuga illo reprehenderit ea voluptatibus earum fugiat obcaecati
+            doloremque? Aspernatur?</p>
+         <div class="icons">
+            <h3> <i class="fas fa-check"></i> mejores precios </h3>
+            <h3> <i class="fas fa-check"></i> el mejor servicio </h3>
+            <h3> <i class="fas fa-check"></i> Fresh Ingredient </h3>
+            <h3> <i class="fas fa-check"></i> backed buns </h3>
+            <h3> <i class="fas fa-check"></i> natural cheese </h3>
+            <h3> <i class="fas fa-check"></i> veg & non-veg </h3>
+         </div>
+         <a href="#" class="btn">read more</a>
+      </div>
+
+   </section>
+
+   <!-- about section ends -->
+
+   <!-- reviews section starts  -->
+   <section id="our-testimonial" id="reviews" class="padding">
+      <link rel="stylesheet" href="css/style-tes.css">
+      <div class="container" >
+         <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+               <img src="images/title-img.png" alt="">
+               <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms"> <span>Testimonials</span>
+                  <h2 class="darkcolor">What People Say</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-md-12 col-sm-12">
+               <div id="testimonial-slider" class="owl-carousel">
+                  <div class="item">
+                     <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                           <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci
+                              volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="images/pic-1.png"></div>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4 class="darkcolor">Sam David</h4>
+                        <small class="defaultcolor">Businessman</small>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                           <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci
+                              volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="images/pic-2.png"></div>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4 class="darkcolor">Jams Shah</h4>
+                        <small class="defaultcolor">Businessman</small>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                           <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci
+                              volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="images/pic-3.png"></div>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4 class="darkcolor">Zubin Zucker</h4>
+                        <small class="defaultcolor">Businessman</small>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                           <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci
+                              volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="images/pic-1.png"></div>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4 class="darkcolor">David Zucker</h4>
+                        <small class="defaultcolor">Businessman</small>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                           <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci
+                              volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="images/pic-2.png"></div>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4 class="darkcolor">Akten Jansen</h4>
+                        <small class="defaultcolor">Businessman</small>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                           <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci
+                              volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="images/pic-3.png"></div>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4 class="darkcolor">Doe Raleway</h4>
+                        <small class="defaultcolor">Businessman</small>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                           <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci
+                              volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="images/pic-1.png"></div>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4 class="darkcolor">Shamoun Raleway</h4>
+                        <small class="defaultcolor">Businessman</small>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                           <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci
+                              volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="images/pic-3.png"></div>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4 class="darkcolor">Albugdadi Raleway</h4>
+                        <small class="defaultcolor">Businessman</small>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                           <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci
+                              volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="images/pic-3.png"></div>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4 class="darkcolor">Albugdadi Raleway</h4>
+                        <small class="defaultcolor">Businessman</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- reviews section ends -->
+
+   <!-- contact section starts  -->
+
+   <section class="contact" id="contact">
+
+      <div class="heading">
+         <img src="images/title-img.png" alt="">
+         <h3>contact us</h3>
+      </div>
+
+      <div class="row">
+
+         <iframe data-aos="fade-up" data-aos-delay="150" class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.2790511692482!2d111.42761760339076!3d-6.969698022806218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7740e3a326c045%3A0x6f5bfd9bc5ace9b8!2sBlora%2C%20Kec.%20Blora%2C%20Kabupaten%20Blora%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1686958573934!5m2!1sid!2sid"
+            allowfullscreen="" loading="lazy"></iframe>
+
+         <div class="form">
+
+            <div class="icons-container">
+
+               <div class="icons" data-aos="fade-up" data-aos-delay="150">
+                  <i class="fas fa-map"></i>
+                  <h3>Direccion :</h3>
+                  <p>adsdasdsds</p>
+               </div>
+
+               <div class="icons" data-aos="fade-up" data-aos-delay="300">
+                  <i class="fas fa-envelope"></i>
+                  <h3>Correo :</h3>
+                  <p>technocake@gmail.com</p>
+                  <!-- <p>DomainName@gmail.com</p> -->
+               </div>
+
+               <div class="icons" data-aos="fade-up" data-aos-delay="450">
+                  <i class="fas fa-phone"></i>
+                  <h3>telefono :</h3>
+                  <p>+123-456-7890</p>
+                  <!-- <p>+111-222-3333</p> -->
+               </div>
+
+            </div>
+
+            <form action="">
+               <input data-aos="fade-up" data-aos-delay="150" type="text" placeholder="Nombre" class="box">
+               <input data-aos="fade-up" data-aos-delay="300" type="email" placeholder="Correo" class="box">
+               <input data-aos="fade-up" data-aos-delay="450" type="number" placeholder="Telefono" class="box">
+               <textarea data-aos="fade-up" data-aos-delay="600" name="" placeholder="Mensaje" class="box" id=""
+                  cols="30" rows="10"></textarea>
+               <input data-aos="fade-up" data-aos-delay="750" type="submit" value="Enviar" class="btn">
+            </form>
+
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- contact section ends -->
+
+   <!-- blogs section starts  -->
+
+   <section class="blogs" id="blogs">
+
+      <div class="heading">
+         <img src="images/title-img.png" alt="">
+         <h3>daily posts</h3>
+      </div>
+
+      <div class="box-container">
+
+         <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <div class="image">
+               <img src="images/blog-1.jpg" alt="">
+               <div class="icons">
+                  <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i> by admin </a>
+               </div>
+            </div>
+            <div class="content">
+               <h3>blog title goes here.</h3>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, maxime.</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <div class="image">
+               <img src="images/blog-2.jpg" alt="">
+               <div class="icons">
+                  <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i> by admin </a>
+               </div>
+            </div>
+            <div class="content">
+               <h3>blog title goes here.</h3>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, maxime.</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <div class="image">
+               <img src="images/blog-3.jpg" alt="">
+               <div class="icons">
+                  <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i> by admin </a>
+               </div>
+            </div>
+            <div class="content">
+               <h3>blog title goes here.</h3>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, maxime.</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- blogs section ends -->
+
+   <!-- footer section starts  -->
+
+   <section class="footer">
+
+      <div class="links">
+         <a href="#home" class="btn">home</a>
+         <a href="#menu" class="btn">menu</a>
+         <a href="#about" class="btn">about</a>
+         <a href="#reviews" class="btn">reviews</a>
+         <a href="#contact" class="btn">contact</a>
+         <a href="#blogs" class="btn">blogs</a>
+      </div>
+
+      <p class="credit"> created by <span><a href="https://www.instagram.com/ardksfs_/">TechnoCake</a></span> | all
+         rights reserved! </p><br>
+
+   </section>
+   <div class="cardShop">
+      <h1>Card</h1>
+      <ul class="listShop">
+      </ul>
+      <div class="checkOut">
+          <div class="total">0</div>
+          <div class="closeShopping">Close</div>
+      </div>
+  </div>
+
+   <!-- footer section ends -->
+
+   <!-- custom js file link      -->
+   <script src="script.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+   <script>
+
+      AOS.init({
+         duration: 800,
+      });
+
+   </script>
+   <script>
+      jQuery(function ($) {
+         "use strict";
+         var $window = $(window);
+         var windowsize = $(window).width();
+         var $root = $("html, body");
+         var $this = $(this);
+
+
+         /*Testimonials 3columns*/
+         $("#testimonial-slider").owlCarousel({
+            items: 3,
+            autoplay: 2500,
+            autoplayHoverPause: true,
+            loop: true,
+            margin: 30,
+            dots: true,
+            nav: false,
+            responsive: {
+               1280: {
+                  items: 3,
+               },
+               600: {
+                  items: 2,
+               },
+               320: {
+                  items: 1,
+               },
+            }
+         });
+
+
+      });
+   </script>
+
+   <!--Owl Slider-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="js/app.js"></script>
+
+</body>
+
+</html>
