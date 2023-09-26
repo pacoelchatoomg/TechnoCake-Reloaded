@@ -29,7 +29,7 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('producto.store');
         Route::get('show/{id}', 'show')->name('producto.show');
         Route::get('edit/{id}', 'edit')->name('producto.edit');
-        Route::put('edit/{id}', 'update')->name('producto.update');
+        Route::put('edit/{product_code}', 'update')->name('producto.update');
         Route::delete('destroy/{id}', 'destroy')->name('producto.destroy');
     });
  

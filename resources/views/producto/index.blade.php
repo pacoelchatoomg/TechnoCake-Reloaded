@@ -1,4 +1,3 @@
-//resources/views/producto/index.blade.php
 @extends('layouts.app')
   
 @section('title', 'Home producto')

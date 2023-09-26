@@ -58,11 +58,19 @@ class ProductoController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $product_code)
     {
-        $producto = producto::findOrFail($id);
+        // $producto->title = $request->title;
+        // $producto->price = $request->price;
+        // $producto->product_code = $request->product_code;
+        // $producto->description = $request->description;
+        // $producto->save();
+        $producto = producto::find($product_code);
+        $producto->update(array_merge($producto->toArray(), $request->toArray()));
+
+        // $producto = producto::findOrFail($id);
   
-        $producto->update($request->all());
+        // $producto->update($request->all());
   
         return redirect()->route('producto')->with('success', 'producto updated successfully');
     }
