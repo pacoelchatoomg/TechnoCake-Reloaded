@@ -10319,9 +10319,8 @@ a:focus {
   color: #858796;
 }
 
-.sidebar {
-  width: 6.5rem;
-  min-height: 100vh;
+.navbar-nav.bg-gradient-pink.sidebar.sidebar-dark.accordion {
+  background: linear-gradient(90deg, #FF69B4, #FF1493) !important;
 }
 
 .sidebar .nav-item {

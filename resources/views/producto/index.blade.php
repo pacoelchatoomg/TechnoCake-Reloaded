@@ -4,8 +4,8 @@
   
 @section('contents')
     <div class="d-flex align-items-center justify-content-between">
-        <h1 class="mb-0">List producto</h1>
-        <a href="{{ route('producto.create') }}" class="btn btn-primary">Add producto</a>
+        <h1 class="mb-0">Lista de productos</h1>
+        <a href="{{ route('producto.create') }}" class="btn btn-primary">Añadir producto</a>
     </div>
     <hr />
     @if(Session::has('success'))
@@ -17,11 +17,11 @@
         <thead class="table-primary">
             <tr>
                 <th>#</th>
-                <th>Title</th>
-                <th>Price</th>
-                <th>producto Code</th>
-                <th>Description</th>
-                <th>Action</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Código de producto</th>
+                <th>Descripción</th>
+                <th>Acción</th>
             </tr>
         </thead>
         <tbody>+
@@ -35,12 +35,12 @@
                         <td class="align-middle">{{ $rs->description }}</td>  
                         <td class="align-middle">
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <a href="{{ route('producto.show', $rs->id) }}" type="button" class="btn btn-secondary">Detail</a>
-                                <a href="{{ route('producto.edit', $rs->id)}}" type="button" class="btn btn-warning">Edit</a>
-                                <form action="{{ route('producto.destroy', $rs->id) }}" method="POST" type="button" class="btn btn-danger p-0" onsubmit="return confirm('Delete?')">
+                                <a href="{{ route('producto.show', $rs->id) }}" type="button" class="btn btn-secondary">Detalles</a>
+                                <a href="{{ route('producto.edit', $rs->id)}}" type="button" class="btn btn-warning">Editar</a>
+                                <form action="{{ route('producto.destroy', $rs->id) }}" method="POST" type="button" class="btn btn-danger p-0" onsubmit="return confirm('¿Seguro de eliminar?')">
                                     @csrf
                                     @method('DELETE')
-                                    <button class="btn btn-danger m-0">Delete</button>
+                                    <button class="btn btn-danger m-0">Eliminar</button>
                                 </form>
                             </div>
                         </td>
@@ -48,7 +48,7 @@
                 @endforeach
             @else
                 <tr>
-                    <td class="text-center" colspan="5">producto not found</td>
+                    <td class="text-center" colspan="5">producto no encontrado</td>
                 </tr>
             @endif
         </tbody>

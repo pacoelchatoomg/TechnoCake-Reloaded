@@ -13,7 +13,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('price');
             $table->string('product_code')->default('');
-            $table->text('description');
+            $table->string('description');
             $table->timestamps();
         });
     }

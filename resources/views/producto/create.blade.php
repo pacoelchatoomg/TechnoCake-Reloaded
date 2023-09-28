@@ -20,7 +20,7 @@
                 <input type="text" name="product_code" class="form-control" placeholder="product Code">
             </div>
             <div class="col">
-                <textarea class="form-control" name="description" placeholder="Descriptoin"></textarea>
+                <input type="text" name="description" class="form-control" placeholder="description">
             </div>
         </div>
  
