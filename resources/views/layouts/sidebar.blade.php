@@ -21,7 +21,17 @@
   <li class="nav-item">
     <a class="nav-link" href="{{ route('producto') }}">
       <i class="fas fa-fw fa-tachometer-alt"></i>
-      <span>producto</span></a>
+      <span>Producto</span></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ route('Pedidos') }}">
+      <i class="fas fa-fw fa-tachometer-alt"></i>
+      <span>Pedidos</span></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ route('users') }}">
+      <i class="fas fa-fw fa-tachometer-alt"></i>
+      <span>Usuarios</span></a>
   </li>
   
   <li class="nav-item">
