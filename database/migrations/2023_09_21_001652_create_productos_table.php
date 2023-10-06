@@ -10,7 +10,7 @@ return new class extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
-            $table->float('title');
+            $table->string('title');
             $table->string('price');
             $table->string('product_code')->default('');
             $table->string('description');

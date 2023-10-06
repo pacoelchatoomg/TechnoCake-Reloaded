@@ -48,7 +48,7 @@
                 @endforeach
             @else
                 <tr>
-                    <td class="text-center" colspan="5">producto no encontrado</td>
+                    <td class="text-center" colspan="5">Producto no encontrado</td>
                 </tr>
             @endif
         </tbody>

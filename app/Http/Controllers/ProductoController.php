@@ -32,7 +32,7 @@ class ProductoController extends Controller
     {
         Producto::create($request->all());
  
-        return redirect()->route('producto')->with('success', 'producto added successfully');
+        return redirect()->route('producto')->with('success', 'Producto Añadido');
     }
   
     /**
@@ -72,7 +72,7 @@ class ProductoController extends Controller
   
         $producto->update($request->all());
   
-        return redirect()->route('producto')->with('success', 'producto updated successfully');
+        return redirect()->route('producto')->with('success', 'Producto Actualizado');
     }
   
     /**
@@ -84,6 +84,6 @@ class ProductoController extends Controller
   
         $producto->delete();
   
-        return redirect()->route('producto')->with('success', 'producto deleted successfully');
+        return redirect()->route('producto')->with('success', 'Producto Eliminado');
     }
 }
