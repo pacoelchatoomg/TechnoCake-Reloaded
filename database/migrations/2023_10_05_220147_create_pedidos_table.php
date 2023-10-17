@@ -11,9 +11,9 @@ return new class extends Migration
         Schema::create('Pedidos', function (Blueprint $table) {
             $table->id();
             $table->integer('amount');
-            $table->float('price');
+            $table->decimal('price', 8,2);
             $table->string('status');
-            $table->string('description');
+            $table->text('description');
             $table->timestamps();
         });
     }

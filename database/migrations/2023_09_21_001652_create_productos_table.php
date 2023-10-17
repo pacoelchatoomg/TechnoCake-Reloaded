@@ -11,9 +11,9 @@ return new class extends Migration
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('price');
-            $table->string('product_code')->default('');
-            $table->string('description');
+            $table->decimal('price', 8, 2);
+            $table->string('product_code')->unique();
+            $table->text('description');
             $table->timestamps();
         });
     }

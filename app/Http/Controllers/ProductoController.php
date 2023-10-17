@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
   
 use Illuminate\Http\Request;
 use App\Models\Producto;
- 
+use Illuminate\Support\Facades\Validator;
+
 class ProductoController extends Controller
 {
     /**
@@ -30,9 +31,50 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
+        $rules = [
+            'title' => 'required|max:255',
+            'price' => 'required|numeric',
+            'product_code' => 'required|unique:productos,product_code',
+            'description' => 'required',
+        ];
+
+        // Personalizar mensajes de error
+        $messages = [
+            'required' => 'El campo :attribute es obligatorio.',
+            'max' => 'El campo :attribute no debe exceder :max caracteres.',
+            'numeric' => 'El campo :attribute debe ser un número.',
+        ];
+
+        // Validar la información
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withInput()
+                ->withErrors($validator);
+        }
+
+        // Crear el registro si la validación pasa
         Producto::create($request->all());
- 
+
         return redirect()->route('producto')->with('success', 'Producto Añadido');
+        // versión corta de validación
+        // $request->validate([
+        //     'title' => 'required|max:255',
+        //     'price' => 'required|numeric',
+        //     'product_code' => 'required|unique:productos,product_code',
+        //     'description' => 'nullable',
+        // ]);
+
+        // Producto::create($request->all());
+
+        // return redirect()->route('producto')->with('success', 'Producto Añadido');
+        
+        // sin validación
+
+        // Producto::create($request->all());
+ 
+        // return redirect()->route('producto')->with('success', 'Producto Añadido');
     }
   
     /**

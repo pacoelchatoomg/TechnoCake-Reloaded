@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
   
 use Illuminate\Http\Request;
 use App\Models\Pedidos;
- 
+use Illuminate\Support\Facades\Validator;
+
 class PedidosController extends Controller
 {
     /**
@@ -30,6 +31,28 @@ class PedidosController extends Controller
      */
     public function store(Request $request)
     {
+        $rules = [
+            'amount' => 'required|max:255',
+            'price' => 'required|numeric',
+            'status' => 'required|max:20',
+            'description' => 'required',
+        ];
+
+        // Personalizar mensajes de error
+        $messages = [
+            'required' => 'El campo :attribute es obligatorio.',
+            'max' => 'El campo :attribute no debe exceder :max caracteres.',
+            'numeric' => 'El campo :attribute debe ser un número.',
+        ];
+
+        // Validar la información
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withInput()
+                ->withErrors($validator);
+        }
         Pedidos::create($request->all());
  
         return redirect()->route('Pedidos')->with('success', 'Pedidos added successfully');
