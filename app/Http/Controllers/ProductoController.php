@@ -38,7 +38,6 @@ class ProductoController extends Controller
             'description' => 'required',
         ];
 
-        // Personalizar mensajes de error
         $messages = [
             'required' => 'El campo :attribute es obligatorio.',
             'max' => 'El campo :attribute no debe exceder :max caracteres.',
