@@ -5,21 +5,21 @@
 @section('contents')
     <h1 class="mb-0">Edit users</h1>
     <hr />
-    <form action="{{ route('users.update',  $users->id) }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('users.update',  $Users->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method("PATCH")
         dd($users)
         <div class="row mb-3">
             <div class="col">
-                <input type="text" name="title" value="{{ $users->name}}" class="form-control" placeholder="Nombre">
+                <input type="text" name="title" value="{{ $Users->name}}" class="form-control" placeholder="Nombre">
             </div>
             <div class="col">
-                <input type="text" name="price" value="{{ $users->email}}" class="form-control" placeholder="Correo Electrónico">
+                <input type="text" name="price" value="{{ $Users->email}}" class="form-control" placeholder="Correo Electrónico">
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <input type="text" name="product_code" value="{{ $users->password}}" class="form-control" placeholder="Contraseña">
+                <input type="text" name="product_code" value="{{ $Users->password}}" class="form-control" placeholder="Contraseña">
             </div>
 
         </div>

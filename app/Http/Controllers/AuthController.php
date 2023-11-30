@@ -23,12 +23,12 @@ class AuthController extends Controller
             'email' => 'required|email',
             'password' => 'required|confirmed'
         ])->validate();
-  
+        $role = $request->input('role', 'client');
         User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'level' => 'Admin'
+            'role' => $role,
         ]);
   
         return redirect()->route('login');

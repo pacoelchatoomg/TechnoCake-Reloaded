@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
   
 use Illuminate\Http\Request;
 use App\Models\Users;
+use Illuminate\Support\Facades\Validator;
+
  
 class UsersController extends Controller
 {
@@ -58,21 +60,33 @@ class UsersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        // $Users->title = $request->title;
-        // $Users->price = $request->price;
-        // $Users->product_code = $request->product_code;
-        // $Users->description = $request->description;
-        // $Users->save();
-        // $Users = Users::find($id);
-        // $Users->update(array_merge($Users->toArray(), $request->toArray()));
+        $rules = [
+            'name' => 'required|max:255',
+            'email' => 'required|unique:productos,product_code,' . $id, // Agrega el ID actual para excluirlo de la regla de 
+        ];
 
-        $Users = Users::findOrFail($id);
-  
-        $Users->update($request->all());
-  
-        return redirect()->route('users')->with('success', 'Users updated successfully');
+        $messages = [
+            'required' => 'El campo :attribute es obligatorio.',
+            'max' => 'El campo :attribute no debe exceder :max caracteres.',
+            'numeric' => 'El campo :attribute debe ser un número.',
+        ];
+
+        // Validar la información
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withInput()
+                ->withErrors($validator);
+        }
+
+        // Actualizar el registro si la validación pasa
+        $producto = Users::findOrFail($id);
+        $producto->update($request->all());
+
+        return redirect()->route('users')->with('success', 'Usuario Actualizado');
     }
   
     /**

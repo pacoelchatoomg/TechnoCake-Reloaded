@@ -1,6 +1,6 @@
 // Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#858796';
+Chart.defaults.global.defaultFontColor = '#ff009d';
 
 function number_format(number, decimals, dec_point, thousands_sep) {
   // *     example: number_format(1234.56, 2, ',', ' ');
@@ -32,12 +32,12 @@ var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: ["August", "September", "October", "November", "December"],
     datasets: [{
       label: "Revenue",
-      backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#2e59d9",
-      borderColor: "#4e73df",
+      backgroundColor: "#ff009d",
+      hoverBackgroundColor: "#ff009d",
+      borderColor: "#ff009d",
       data: [4215, 5312, 6251, 7841, 9821, 14984],
     }],
   },
@@ -77,8 +77,8 @@ var myBarChart = new Chart(ctx, {
           }
         },
         gridLines: {
-          color: "rgb(234, 236, 244)",
-          zeroLineColor: "rgb(234, 236, 244)",
+          color: "#ff009d",
+          zeroLineColor: "#ff009d",
           drawBorder: false,
           borderDash: [2],
           zeroLineBorderDash: [2]
@@ -90,11 +90,11 @@ var myBarChart = new Chart(ctx, {
     },
     tooltips: {
       titleMarginBottom: 10,
-      titleFontColor: '#6e707e',
+      titleFontColor: '#ff009d',
       titleFontSize: 14,
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
+      backgroundColor: "#fff",
+      bodyFontColor: "#ff009d",
+      borderColor: '#ff009d',
       borderWidth: 1,
       xPadding: 15,
       yPadding: 15,

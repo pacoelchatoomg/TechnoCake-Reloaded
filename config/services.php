@@ -13,6 +13,11 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
+    'google' => [
+        'client_id' => '52901704781-3tvkjhispat219bne7kkboa1gk4b3ea0.apps.googleusercontent.com',
+        'client_secret' => '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',
+        'redirect' => '/google_callback',
+    ],
 
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
